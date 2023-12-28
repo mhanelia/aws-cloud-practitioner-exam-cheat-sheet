@@ -134,8 +134,9 @@
 - [AWS Systems Manager](#aws-systems-manager)
 - [AWS Trusted Advisor](#aws-trusted-advisor)
 
-[AWS Well-Architected Tool](#aws-well-architected-tool)
+[AWS Well-Architected](#aws-well-architected)
 
+- [AWS Well-Architected Framework](#aws-well-architected-framework)
 - [Ferramenta do AWS Well-Architected](#ferramenta-do-aws-well-architected)
 
 [Migração e Transferência](#migração-e-transferência)
@@ -899,7 +900,20 @@ A AWS CLI v2 oferece diversos novos recursos incluindo instaladores aprimorados,
 
 **Uso típico:** Otimização contínua e implementação de boas práticas.
 
-## AWS Well-Architected Tool
+## AWS Well-Architected
+
+### AWS Well-Architected Framework
+
+**Descrição:** O AWS Well-Architected Framework descreve os principais conceitos, princípios de projeto e práticas recomendadas para projetar e executar workloads na nuvem. Ao responder algumas perguntas fundamentais, você aprende o quanto sua arquitetura se alinha com as práticas recomendadas da nuvem e recebe orientações para fazer melhorias.
+
+**Como funciona:** A AWS Well-Architected ajuda arquitetos de nuvem a construir infraestruturas seguras, resilientes, eficientes e de alta performance para aplicações e workloads. Baseado em seis pilares (excelência operacional, segurança, confiabilidade, eficiência de performance, otimização de custos e sustentabilidade), o AWS Well-Architected fornece uma abordagem consistente para que clientes e parceiros avaliem arquiteturas e implementem designs que podem se expandir com o tempo.
+
+- Pilar Excelência operacional: Excelência operacional se concentra na execução e monitoramento sistemas e na melhoria contínua de processos e procedimentos. Os principais tópicos incluem automação de alterações, reação a eventos e definição de padrões para gerenciar as operações diárias.
+- Pilar Segurança: Segurança se concentra na proteção de informações e sistemas. Os principais tópicos incluem confidencialidade e integridade de dados, gerenciamento de permissões de usuário e estabelecimento de controles para detectar eventos de segurança.
+- Pilar Confiabilidade: Confiabilidade se concentra nos workloads que executam as funções pretendidas e na recuperação rápida de falhas em atender demandas. Os principais tópicos incluem projeto de sistemas distribuídos, planejamento de recuperação e requisitos adaptação a mudanças.
+- Pilar Eficiência de performance: Eficiência de performance se concentra na alocação estruturada e simplificada de recursos de TI e computação. Os principais tópicos incluem seleção dos tipos e tamanhos certos dos recursos otimizados para os requisitos de workload, monitoramento de performance e manutenção da eficiência à medida que as necessidades comerciais
+- Pilar Otimização de custos: Otimização de custos se concentra em evitar custos desnecessários. Os principais tópicos incluem compreensão dos gastos ao longo do tempo e controle da alocação de fundos, seleção do tipo e quantidade certa de recursos e dimensionamento para atender às necessidades de negócios sem gastos excessivos.
+- Pilar Sustentabilidade: Sustentabilidade se concentra em minimizar os impactos ambientais da execução de workloads em nuvem. Os principais tópicos incluem um modelo de responsabilidade compartilhada para sustentabilidade, compreensão do impacto e maximização da utilização para minimizar os recursos necessários e reduzir os impactos posteriores. 
 
 ### Ferramenta do AWS Well-Architected
 
@@ -1215,7 +1229,7 @@ A AWS CLI v2 oferece diversos novos recursos incluindo instaladores aprimorados,
 
 **Descrição:** Oferece backup centralizado e recuperação de recursos da AWS.
 
-**Como funciona:**
+**Como funciona:** Com o AWS Backup, é possível definir uma política central de proteção de dados (chamada de plano de backup) que funciona nos serviços da AWS para computação, armazenamento e bancos de dados. O plano de backup define parâmetros como frequência e período de retenção de backup. Depois de definir suas políticas de proteção de dados e atribuir recursos da AWS a elas, o AWS Backup automatiza a criação de backups e os armazena em um cofre de backup criptografado designado por você. As políticas centralizadas no AWS Backup também ajudam a definir controles de acesso e automatizar o gerenciamento de acesso ao backup em todas as suas contas dentro do AWS Organizations.
 
 **Uso típico:** Backup e recuperação de dados e recursos.
 
@@ -1223,7 +1237,7 @@ A AWS CLI v2 oferece diversos novos recursos incluindo instaladores aprimorados,
 
 **Descrição:** Armazenamento de blocos para uso com instâncias EC2.
 
-**Como funciona:** Com o AWS Backup, é possível definir uma política central de proteção de dados (chamada de plano de backup) que funciona nos serviços da AWS para computação, armazenamento e bancos de dados. O plano de backup define parâmetros como frequência e período de retenção de backup. Depois de definir suas políticas de proteção de dados e atribuir recursos da AWS a elas, o AWS Backup automatiza a criação de backups e os armazena em um cofre de backup criptografado designado por você. As políticas centralizadas no AWS Backup também ajudam a definir controles de acesso e automatizar o gerenciamento de acesso ao backup em todas as suas contas dentro do AWS Organizations.
+**Como funciona:** O Amazon Elastic Block Store (Amazon EBS) é um serviço de armazenamento em blocos fácil de usar, escalável e de alta performance projetado para o Amazon Elastic Compute Cloud (Amazon EC2).
 
 **Uso típico:** Armazenamento persistente para instâncias EC2.
 
